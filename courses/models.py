@@ -3,7 +3,7 @@ from users.models import NULLABLE
 
 
 class Course(models.Model):
-    name = models.CharField(max_length=150, verbose_name='Курс', help_text='Укажите наименование курса')
+    name = models.CharField(max_length=150, verbose_name='Наименование', help_text='Укажите наименование курса')
     image = models.ImageField(upload_to='courses_image', verbose_name='Превью', help_text='Загрузите превью курса',
                               **NULLABLE)
     description = models.TextField(verbose_name='Описание', **NULLABLE)
