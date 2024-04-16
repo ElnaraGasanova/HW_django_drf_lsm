@@ -10,6 +10,6 @@ router = DefaultRouter()
 #подключаем набор контроллеров на основе ViewSet
 router.register(r'courses', CourseViewSet, basename='courses')
 
-urlspatterns = [
+urlpatterns = [
     path('courses/', views.CourseViewSet)
 ]
